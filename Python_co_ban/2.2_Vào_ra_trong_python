@@ -1,0 +1,31 @@
+# BÀI TẬP THẦY THƯƠNG GIAO (2/10/2025) 
+# 2.2. VÀO RA TRONG PYTHON
+# In ra một chuỗi   
+print('Hoàng xin chào các bạn')
+
+# In ra nhiều đối tượng
+print('Khoa học', 'Pháp luật', 'Trí tuệ', sep=',', end='!\n\n')
+
+# In ra một tuple
+x = ('Em', 'cảm', 'ơn')
+print(x)
+
+# Yêu cầu người dùng nhập tên
+name = input('Nhập tên của bạn: ')
+print('Chào các bạn, mình tên là', name)
+
+# Yêu cầu người dùng nhập một số nguyên
+so1 = int(input('Điền một số nguyên: '))
+print ('Số nguyên bạn đã nhập là: ', so1)
+
+# Yêu cầu người dùng nhập số 
+so1 = int(input('Nhập số thứ nhất: '))
+so2 = int(input('Nhập số thứ hai: '))
+# Tính tổng
+tong = so1 + so2
+# In kết quả
+print('Tổng của', so1,'và', so2, 'là: ', tong)
+
+# Yêu cầu nhập nhiều giá trị trên một dòng
+much = input('Nhập các giá trị cách nhau bằng khoảng trắng').split()
+print('Các giá trị nhập là: ', much)

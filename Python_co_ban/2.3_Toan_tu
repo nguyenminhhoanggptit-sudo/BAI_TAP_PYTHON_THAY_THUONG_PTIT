@@ -1,0 +1,59 @@
+# BÀI TẬP THẦY THƯƠNG GIAO (2/10/2025) 
+# 2.3. TOÁN TỬ
+# Toán tử số học
+print('Toán tử số học')
+a = 24
+b = 8
+
+print('a + b = ',a+b)
+print('a - b = ',a-b)
+print('a * b = ',a*b)
+print('a / b = ',a/b)
+print('a % b = ',a%b)
+print('a ** b = ',a**b)
+print('a // b =',a//b)
+
+# Toán tử so sánh
+print('Toán tử so sánh')
+a = 12
+b = 36
+
+print('a == b',a == b)
+print('a != b',a != b)
+print('a > b',a > b)
+print('a < b',a < b)
+print('a <= b',a <= b)
+print('a >= b',a >= b)
+
+# Toán tử gán
+print('Toán tử gán')
+a = 2007
+
+a += 18
+print('a += 18 =', a)
+
+a -= 7
+print('a -= 7 =', a) 
+
+a *= 2
+print('a *= 2 =', a)
+
+a /= 3
+print('a /= 3 =', a)
+
+a %= 9
+print('a %= 9 =', a)
+
+a **= 2
+print('a **= 2 =', a)
+
+a //= 3
+print('a //= 3 =', a)
+
+# Toán tử logic
+a = True
+b = False
+
+print('a and b', a and b)
+print('a or b', a or b)
+print('not a', not a)

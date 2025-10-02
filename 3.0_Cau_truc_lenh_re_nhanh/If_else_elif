@@ -1,0 +1,46 @@
+# BÀI TẬP THẦY THƯƠNG GIAO (2/10/2025)
+# If - Else
+print('If - Else')
+age = 18
+if age >= 18:
+    print('Bạn đủ tuổi để đi tù')
+else:
+    print('Bạn chưa đủ tuổi đi tù')
+
+# If - Elif - Else
+print('If - elif - else')
+score = 88
+
+if score >= 90:
+    print(" A+ ")
+elif score >= 80:
+    print(" A ")
+elif score >= 70:
+    print(" B ")
+elif score >= 60:
+    print(' C ')
+else:
+    print(" D ")
+
+# Kết quả điều kiện với các toán tử logic
+print('Kết quả điều kiện với các toán tử logic')
+age = 18
+citizen = 'VIETNAMESE'
+
+if age >= 18 and citizen == 'VIETNAMESE':
+    print('Bạn đi tù')
+else:
+    print('Bạn không đi tù')
+
+# Ứng dụng điều kiện với các kiểu dữ liệu khác nhau
+print('So sánh giá trị')
+
+x = 24
+y = 8
+
+if x > y:
+    print('x lớn hơn y')
+elif x < y:
+    print('x bé hơn y')
+else:
+    print('x bằng y') 

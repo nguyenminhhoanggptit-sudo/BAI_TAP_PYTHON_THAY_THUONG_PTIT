@@ -1,0 +1,22 @@
+# BÀI TẬP THẦY THƯƠNG GIAO (2/10/2025) 
+# Đánh giá điểm thi 
+diem = float(input('Nhập điểm của bạn: '))
+
+if diem >= 9:
+    print('A+ - 4.0 - Xếp loại giỏi')
+elif diem >= 8.5:
+    print('A - 3.7 - Xếp loại giỏi')
+elif diem >= 8:
+    print('B+ - 3.5 - Xếp loại khá')
+elif diem >= 7:
+    print('B - 3.0 - Xếp loại khá')
+elif diem >= 6.5:
+    print('C+ - 2.5 - Xếp loại trung bình')
+elif diem >= 5.5:
+    print('C - 2.0 - Xếp loại trung bình')
+elif diem >= 5:
+    print('D+ - 1.5 - Xếp loại trung bình yếu')
+elif diem >= 4:
+    print('D - 1 - Xếp loại trung bình yếu')
+else:
+    print ('F - 0 - Xếp loại kém')
