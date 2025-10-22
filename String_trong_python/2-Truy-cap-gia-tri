@@ -1,0 +1,6 @@
+# 2.Truy cập giá trị
+str5 = 'Thầy Thương Muôn Năm'
+print(str5[0])  # Truy cập ký tự đầu tiên
+print(str5[5])  # Truy cập ký tự thứ 6  
+print(str5[-1]) # Truy cập ký tự cuối cùng
+print(str5[-3]) # Truy cập ký tự thứ 3 từ cuối

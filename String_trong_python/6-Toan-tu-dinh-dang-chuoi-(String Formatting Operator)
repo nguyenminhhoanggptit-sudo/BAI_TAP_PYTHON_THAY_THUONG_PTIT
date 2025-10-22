@@ -1,0 +1,13 @@
+# 6. Toán tử định dạng chuỗi ( String Formatting Operator)
+# Sử dụng toán tử % để định dạng chuỗi
+name = 'Thương'
+age = 18
+
+format_str12 = 'Em chào thầy %s, em đoán thầy khoảng %f tuổi'%(name, age)
+print(format_str12)
+# Sử dụng phương thức format() để định dạng chuỗi
+format_str13 = 'Em chào thầy {}, em đoán thầy khoảng {} tuổi'.format(name, age)
+print(format_str13)
+# Sử dụng f-strings để định dạng chuỗi 
+format_str14 = f'Em chào thầy {name}, em đoán thầy khoảng {age} tuổi'
+print(format_str14)

@@ -1,0 +1,3 @@
+# 4. Ký tự thoát (Escape Characters)
+str7 = 'Tôi đang học \\Python\\.\nTôi rất thích nó.'
+print(str7)

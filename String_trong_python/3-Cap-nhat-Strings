@@ -1,0 +1,5 @@
+# 3.Cập nhập strings 
+str6 = "Tôi yêu lập trình"
+# Tạo string mới bằng cách thay đổi một phần của string cũ
+new_str6 = str6[:8] + "Python"
+print(new_str6)

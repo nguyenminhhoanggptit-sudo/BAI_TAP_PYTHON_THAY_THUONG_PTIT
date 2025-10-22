@@ -1,0 +1,9 @@
+# 5. Toán tử đặc biệt với strings
+str8 = 'Em chào'
+str9 = 'Thầy!\n'
+# Kết hợp hai strings
+combine_str10 = str8 + " " + str9
+print(combine_str10)
+# Lặp lại một string nhiều lần
+repeated_str11 = str9 * 2
+print(repeated_str11)

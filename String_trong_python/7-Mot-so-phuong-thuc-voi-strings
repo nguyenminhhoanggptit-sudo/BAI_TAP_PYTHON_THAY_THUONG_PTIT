@@ -1,0 +1,53 @@
+# 7. Một số phương thức với Strings
+name1 = ' nguyen minh hoang'
+print(name1.upper())      # Chuyển chuỗi thành chữ in hoa
+print(name1.lower())      # Chuyển chuỗi thành chữ in thường
+print(name1.title())      # Chuyển chữ cái đầu của mỗi từ thành chữ in hoa
+# Kết hợp hoặc nối chuỗi
+first_name = 'Nguyen'
+last_name = 'Minh Hoang'
+full_name = first_name + ' ' + last_name
+print(full_name)
+message = 'Xin Chào tôi là {full_name.upper()}'
+print(message)
+# Xóa khoảng trắng thừa
+text = '  Hello Python !  '
+print('Rstrip:',text.rstrip())   # Xóa khoảng trắng bên phải
+print('Lstrip:',text.lstrip())   # Xóa khoảng trắng bên trái
+print('strip:',text.strip())     # Xóa khoảng trắng cả hai bên
+## Nhiều phương thức khác với chuỗi
+text2 = 'this is python programming language'  
+# Viết hoa chữ cái đầu tiên
+print(text2.capitalize())
+# Căn giữa chuỗi bằng ký tự khác nhau
+x = text2.center(50,'=')
+print(x,len(x))
+# Đếm số lần xuất hiện của một giá trị cụ thể xuất hiện trong chuỗi
+text3 = 'Python is great and is essential for business analyses'
+print("Number of 'is' in text3: ", text3.count('is'))
+# Tìm vị trí xuất hiện đầu tiên của một giá trị cụ thể trong chuỗi
+text4 = 'Business analytics is an important skill'
+print('Position of "important" in text4', text4.find('important'))
+# Tìm vị trí xuất hiện cuối cùng của một giá trị cụ thể trong chuỗi
+print('Posotion of "is" in text4:', text4.rfind('is'))
+# Kiểm tra tính chất của chuỗi
+text5 = 'HELLO EVERYONE!'
+text6 = '24082007'
+print(text5.isupper()) # Kiểm tra tất cả ký tự có phải chữ in hoa không
+print(text6.isdigit()) # Kiểm tra tất cả ký tự có phải chữ số không
+print(text5.isalnum())  # Kiểm tra tất cả ký tự có phải chữ cái hoặc chữ số không
+print(text5.isalpha()) # Kiểm tra tất cả ký tự có phải chữ cái không
+print(text6.islower()) # Kiểm tra tất cả ký tự có phải chữ in thường không
+print(text5.isnumeric()) # Kiểm tra tất cả ký tự có phải số không
+# Lấy phần tử trong một iterable và nối chúng thành chuỗi
+words = ['Python', 'là', 'ngôn', 'ngữ', 'lập', 'trình', 'tuyệt', 'vời']
+sentence = '-'.join(words)
+print(sentence)
+# Thay thế một phần của chuỗi bằng một chuỗi khác
+text7 = 'I Love BA'
+new_text7 = text7.replace('BA', 'Business Analytics')
+print(new_text7)
+# Tacsh một chuỗi thành danh sách các chuỗi con dựa trên một ký tự phân tách
+text8 = 'Python,Java,C++,R,SQL'
+string_list = text8.split(',')
+print(string_list)

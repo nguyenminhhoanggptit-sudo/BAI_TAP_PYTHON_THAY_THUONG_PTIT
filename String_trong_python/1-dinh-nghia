@@ -1,0 +1,14 @@
+# 1.Định nghĩa chuỗi
+# Tạo string bằng dấu nháy đơn
+str1 = 'Hello everyone !'
+print(str1)
+# Tạo string bằng dấu nháy kép
+str2 = "Hello everybody !"
+print(str2)
+# Tạo string bằng dấu nháy 3 đơn hoặc 3 kép
+str3 = '''Hello 
+all people !'''
+print(str3)
+str4 = """Chào tất cả
+mọi người !"""
+print(str4)

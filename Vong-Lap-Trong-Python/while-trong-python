@@ -1,0 +1,5 @@
+# VÒNG LẶP WHILE.
+count = 0
+while count <= 24:
+    print('count =',count)
+    count +=2

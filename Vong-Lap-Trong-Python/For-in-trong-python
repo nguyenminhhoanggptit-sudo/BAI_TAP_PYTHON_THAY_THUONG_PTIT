@@ -38,27 +38,3 @@ else:
 word = 'Hoang'
 for letter in word:
     print(letter)
-# VÒNG LẶP WHILE.
-count = 0
-while count <= 24:
-    print('count =',count)
-    count +=2
-#10/16/2025
-# Ví dụ về break trong vòng lặp
-for i in range(10):
-    if i == 8:
-        break
-    print(i)
-# Ví dụ về continue trong vonngf lặp
-for i in range(20):
-    if i % 2==1:
-        continue
-    print(i)
-# Ví dụ về else trong vòng lặp
-for n in range(2, 24):
-    for d in range(2, n):
-     if n % d == 0:
-            print(f"{n} = {d} * {n//d}")
-            break
-    else:
-        print(f"{n} là số nguyên tố")
