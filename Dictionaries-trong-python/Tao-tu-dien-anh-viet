@@ -1,0 +1,25 @@
+# Tạo từ điển anh - việt 10 từ 
+av_dict = {
+    "pig": 'Con lợn',
+    "cow": 'Con bò',
+    "cup": 'Cái cốc',
+    "log": 'Khúc gỗ',
+    'smartphone': 'Điện thoại thông minh',
+    "business analytic": 'Phân tích kinh doanh',
+    'chicken': 'Con gà',
+    "mouse": 'Con chuột',
+    'shirt': 'Áo phông',
+    'chair': 'Cái ghế'
+} 
+print("Từ điển Anh - Việt có sẵn 10 từ:")
+print('Nhập 0 để kết thúc chương trình\n')
+while True:
+    word = input('Nhập từ tiếng anh cần tra: ').lower()
+    if word == '0':
+        print ("Bạn đã thoát chương trình")
+        break
+    if word in av_dict:
+        print(f"{word} có nghĩa là {av_dict[word]}\n")
+    else:
+        print(f"Xin lỗi, từ {word} không có trong từ điển.\n")
+    

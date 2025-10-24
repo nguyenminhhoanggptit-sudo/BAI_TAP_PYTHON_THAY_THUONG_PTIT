@@ -1,0 +1,81 @@
+# 1. Nhập vào một chuỗi kí tự string, in chuỗi ra đó lần lượt theo định dạng:
+str = input("Nhập vào một chuỗi kí tự: ")
+print('Chuỗi in hoa chữ cái đầu tiên:', str.capitalize())
+print('Chuỗi in hoa chữ cái đầu mỗi từ:', str.title())
+print('Chuỗi in hoa toàn bộ:', str.upper())
+print('Chuỗi in thường toàn bộ:', str.lower())
+# 2. Nghĩ đến một trích dẫn nổi tiếng mà bạn yêu thích. In ra trính dẫn đó với tên của tác giả
+print('Chủ tịch Hồ Chí Minh đã từng nói: \"Học cái tốt thì khó, ví như người ta leo núi, phải vất vả, khó nhọc mới lên đến đỉnh.Học cái xấu thì dễ, như ở trên đỉnh núi trượt chân một cái là nhào xuống vực sâu.\"')
+# 3. Nhập vào một chuỗi kí tự. Kiểm tra xem chuỗi đó có thỏa mãn các điều kiện sau không:
+str1 = input("Nhập vào một chuỗi kí tự: ")
+print('Chuỗi có chỉ chứa số (0 - 9):', str1.isdigit())
+print('Chuỗi chỉ chứa kí tự alphabet:', str1.isalpha())
+print('Chuỗi chỉ chứa kí tự alphanumeric (chữ và số):', str1.isalnum())
+print('Chuỗi chỉ chứa kí tự in hoa:', str1.isupper())
+print('Chuỗi chỉ chứa kí tự in thường:', str1.islower())
+# 4.Nhập vào một chuỗi gồm nhiều từ cách nhau bởi dấu whitespaces:
+str2 = input('Nhập vào một chuỗi gồm nhiều từ cách nhau bởi dấu whitespaces: ')
+# Kiểm tra chuỗi vừa nhập vào có kết thúc bằng 'end' không:
+print('Chuỗi kết thúc bằng \'end\':', str2.endswith('end'))
+# Kiểm tra xem từ 'is' có xuất hiện trong string vừa nhập vào không. Nếu có, in ra vị trí xuất hiện đầu tiên và số lần xuất hiện trong chuỗi:
+if 'is' in str2 :
+    print('Từ \'is\' xuất hiện trong chuỗi vừa nhập vào.')
+    print('Vị trí xuất hiện đầu tiên của từ \'is\':',str2.find('is'))
+    print('Số lần xuất hiện của từ \'is\':',str2.count('is'))
+else:
+    print('Từ \'is\' không xuất hiện trong chuỗi vừa nhập vào.')
+# Thay thế các từ 'is' bằng từ 'are' trong chuỗi:
+new_str2 = str2.replace('is','are')
+# Chuyển chuỗi trên thành danh sách chứa các từ và đếm số lượng từ hiện có
+word_list = str2.split()
+print('Danh sách các từ trong chuỗi vừa nhập vào:', word_list)
+print('Số lượng từ trong chuỗi vừa nhập vào:', len(word_list))
+# 5. Nhập vào hai chuỗi kí tự S1 và S2. In ra chuỗi kí tự S được tạo thành bằng cách chèn S2 vào chính giữa S1:
+s1 = input('Nhập vào chuỗi kí tự S1: ')
+s2 = input('Nhập vào chuỗi ký tự S2: ')
+mid_s = len(s1) // 2
+s = s1[:mid_s] + s2 + s1[mid_s:]
+print('Chuỗi S được tạo thành bằng cách chèn S2 vào chính giữa S1 là:', s)
+# 6.Nhập vào một chuỗi S:
+# Tìm tất cả các chữ số xuất hiện trong chuỗi S
+str3 = input('Nhập vào một chuỗi S: ')
+so_in_str3 = [a for a in str3 if a.isdigit()]
+print('Các chữ số xuất hiện trong chuỗi S:', so_in_str3)
+# tính tổng các chữ số xuất hiện rong chuỗi S. Nếu không có chữ số nào, in ra "Come on, I'm so tired!".
+if len(so_in_str3) == 0:
+    print("Come on, I'm so tired!")
+else:
+    tong = sum(int(a) for a in so_in_str3)
+    print('Tổng các chữ số xuất hiện trong chuỗi S:', tong)
+# 7. Nhập vào chuỗi S và S1. Xóa tất cả S1 xuất hiện trong S và in ra S cuối cùng:
+str4 = input('Nhập vào chuỗi S: ')
+str5 = input('Nhập vào chuỗi S1: ')
+new_s = str4.replace(str5,'')
+print('Chuỗi S sau khi xóa tất cả S1 xuất hiện trong S là:', new_s)
+# 8. Nhập vào chuỗi S và S1. Xóa S1 xuất hiện lần đầu tiên trong S và in ra S
+str6 = input('Nhập vào chuỗi S: ')
+str7 = input('Nhập vào chuỗi S1: ')
+new_S = str6.replace(str7,'',1)
+print('Chuỗi S sau khi xóa S1 xuất hiện lần đầu tiên trong S là:', new_S)
+# 9. Nhập vào một chuỗi S, in ra chuỗi con có độ dài lớn nhất trong S, nếu có nhiều chuỗi con có độ dài giống nhau, in ra chuỗi con cuối cùng
+str8 = input('Nhập vào một chuỗi S: ')
+words = str8.split()
+max_length = 0
+longest_word = ''
+for word in words:
+    if len(word) >= max_length:
+        max_length = len(word)
+        longest_word = word 
+print('Chuỗi con có độ dài lớn nhất trong S là:', longest_word)
+# 10. Nhập vào một chuỗi S, in ra chuỗi S1 là đảo ngược của S.
+str9 = input('Nhập vào một chuỗi S: ')
+nguoc_str9 = str9[::-1]
+print('Chuỗi S1 là đảo ngược của S:', nguoc_str9)
+# Nhập vào một chuỗi S, thực hiện chuẩn hóa S với các yêu cầu sau:
+s = input('Nhập vào một chuỗi S: ')
+words = s.split()
+normalized_s = ' '.join(words)  
+normalized_s = normalized_s.capitalize()
+if not normalized_s.endswith('.'):
+    normalized_s += '.'
+print('Chuỗi S sau khi chuẩn hóa là:', normalized_s)
