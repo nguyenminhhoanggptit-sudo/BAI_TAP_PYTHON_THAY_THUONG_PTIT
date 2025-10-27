@@ -1,0 +1,164 @@
+# 23/10/2025
+# Danh sách (List) trong python
+students = ['Hoàng','Đăng','Phú','Đức','Trung']
+for i in range(len(students)):
+    print(students[i])
+# Lấy độ dài danh sách
+mylist = [10,20,30,40,50]
+for i in range(len(mylist)):
+    mylist[i]+= (i+1)
+print(mylist)
+# Truy cập phần tử trong danh sách
+food = ['bún chả','Phở bò','bánh mì','cơm tấm','gỏi cuốn']
+print(food[0])  # Truy cập phần tử đầu tiên
+print(food[2])  # Truy cập phần tử thứ 3
+print(food[-1]) # Truy cập phần tử cuối cùng
+# Duyệt các phần tử trong danh sách
+std = ['hoang','phu','dang','duc','hieu']
+num_std = len(std)
+for i in range(num_std):
+    print(i, std[i])
+# Slicing (Cắt lát) List
+list1 = ['java','c++','c#','python','php']
+print(list1[2:4])
+print(list1[2:])
+print(list1[:3])
+print(list1[-2:])
+# Thay đổi phần tử trong danh sách
+list2 = ['toan','van','anh','su','dia']
+print('Before modifying: ',list2)
+list2[1] = 'li'
+print('After modifying: ',list2)
+copy_list2 = list2.copy()
+list2[2] = 'hoa'
+print(list2)
+print(copy_list2)
+# Thay đổi nhiều phần tử trong list
+list3 = [2,4,8,2007]
+list3[0:3] = [1,9,10]
+print(list3)
+# Thay đổi phần tử bằng vòng lặp
+list4 = [1,2,3,4,5,6]
+for i in range(len(list4)):
+    list4[i]+=12
+print(list4)
+# Thay đổi phần tử bằng List Comprehension
+list5 = [1,3,5,7,9]
+list5 = [x ** 2 for x in list5]
+print(list5)
+# Thay đổi phần tử bằng hàm map và lambda
+list6 = [2,4,6,8,10]
+list6 = list(map(lambda x: x + 2, list6))
+print(list6)
+# Thay đổi phần tử bằng cách sử dụng hàm enumerate
+list7 = [1,4,7,10,13]
+for a,b in enumerate(list7):
+    list7[a] = b + 2
+print(list7)
+# Thay đổi phần tử trong List bằng cách sử dụng hàm filter
+list8 = [5,10,15,20,25,30]
+list8 = list(filter(lambda x: x != 30,list8))
+print(list8)
+# Thay đổi phần tử trong List bằng hàm reduce
+from functools import reduce
+mylist = [1,2,3,4,5]
+sum_list = reduce(lambda x,y: x + y, mylist)
+print(sum_list)
+# Thay đổi phần tử trong List bằng cách sử dụng hàm zip
+lista = [1,2,3,4]
+listb = [10,20,30,40]
+result = [ a + b for a,b in zip(lista, listb)]
+print(result)
+# Thay đổi phần tử trong List bằng cách sử dụng hàm itertools
+import itertools 
+mylist1 = [(1,2) ,(3,4),(5,6)]
+result1 = list(itertools.starmap(lambda x,y: x + y, mylist1))
+print(result1)
+## THÊM PHẦN TỬ VÀO DANH SÁCH
+# Thêm một phần tử
+list9 = ['Ga','Vit','Ngong','Ngan']
+list9.append('Lon')
+print(list9)
+for i in list9:
+    print(i)
+list9.extend(['Ca map','Huou cao co'])
+print(list9)
+print(list9 + ['Chim','Ca vang'])
+# Chèn phần tử vào vị trí cụ thể
+list9 = ['Ga','Vit','Ngong','Ngan']
+new_list9 = "Rua"
+print(list9)
+list9.insert(1, new_list9)
+print(list9)
+# Sử dụng toán tử để nối danh sách
+list10 = [2,4,6]
+list11 = [8,10,12]
+new_list2 = list10 + list11
+print(new_list2)
+# List Comprehension
+list10 = [2,4,6]
+list11 = [8,10,12]
+new_list3 = [a for list in [list10,list11] for a in list]
+print(new_list3)
+# Sử dụng itertools.chain()
+import itertools
+list10 = [2,4,6]
+list11 = [8,10,12]
+new_list4 = list(itertools.chain(list10,list11))
+print(new_list4)
+# Sử dụng toán tử '*' để nối danh sách
+list10 = [2,4,6]
+list11 = [8,10,12]
+new_list0 = [*list10, *list11]
+print(new_list0)
+# Sử dụng toán tử += để nối danh sách
+list10 = [2,4,6]
+list11 = [8,10,12]
+list10 += list11
+print(list10)
+# Xóa phần tử khỏi danh sách
+list12 = ['Red','Blue','Green','Yellow','Black']
+del list12[2]
+print(list12) # Xóa phần tử tại vị trí index 2
+list12.remove('Yellow')
+print(list12) # Xóa phần tử có giá trị 'Yellow'
+popped_list12 = list12.pop()
+print(popped_list12) # Xóa và trả về phần tử cuối cùng
+print(list12)
+# Đảo ngược danh sách vĩnh viễn 
+list13 = [2,4,6,8,10]
+list13.reverse()
+print(list13)
+# Đảo ngược danh sách tạm thời 
+list13 = [2,4,6,8,10]
+reversed_list13 = list13[::-1]
+print(list13)
+print(reversed_list13)
+# Sắp xếp danh sách vĩnh viễn
+list14 = [2,5,8,3,6,1,4,7]
+print('Before sorting:', list14)
+list14.sort()
+print('After sorting:', list14)
+# Sắp xếp ngược (sort(reserve=True)
+list15 = ['ga','vit','ngong','lon','heo']
+print('Before sorting:', list15)
+list15.sort(reverse=True)   
+print('After sorting:', list15)
+# Sắp xếp tạm thời bằng hàm sorted()
+list16 = [10,3,6,4,7,9,8,5,2,1]
+print('Before sorting:', list16)
+sorted_list16 = sorted(list16)
+print('After sorting:', sorted_list16)
+# List lồng nhau hai chiều
+list2d = [[5,10,15,20],
+          [25,30,35,40],
+          [45,50,55,60],
+          [65,70,75,80]]
+for a in range (4):
+    for b in range (4):
+        print(list2d[a][b], end = '\t')
+    print()
+for c in range (4):
+    for d in range (4):
+        print('list2d[',c,'][',d,'] =', list2d[c][d])
+    print()

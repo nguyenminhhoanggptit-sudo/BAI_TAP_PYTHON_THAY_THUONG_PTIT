@@ -1,0 +1,65 @@
+## Dictionary in Python
+# Cấu trúc khai báo và khởi tạo
+my_dict = {
+    'name': 'Nguyễn Văn Thương',
+    'age': 'U40',
+    'city': 'Hà Nội',
+    'major': 'lecturer'
+}
+# Truy cập phần tử trong dictionary
+print('Name:', my_dict['name'])
+print('Age:', my_dict['age'])
+print('City:', my_dict['city'])
+print('Major:', my_dict.get('major')) # Sử dụng phương thức get()
+# Lấy danh sách khóa/ giá trị / cặp khóa - giá trị
+print('Keys:', my_dict.keys()) # Trả về danh sách các khóa
+print('Values: ',my_dict.values()) # Trả veef danh sách các giá trị 
+print('Items: ', my_dict.items()) # Trả về danh sách các cặp khóa - giá trị 
+# Ví dụ thực tiễn & trường hợp lồng nhau
+# Ví dụ đơn giản 
+product = {
+    'id': 248,
+    'name': 'Mouse Logitech',
+    'price': '5000000 đ'
+}
+print('Product ID:', product['id'])
+print('Product Name:', product['name'])
+print('Product Price:', product['price'])
+print(f'Description:{product.get('description','No description available')}')
+# Dictionary lồng nhau
+student = {
+    'p1': {
+        'name': 'Nguyễn Văn Thương',
+        'age': 20,
+        'major': 'IT'},
+    'p2': {
+        'name': 'Trần Đăng Khoa',
+        'age': 21,
+        'major': 'Business Analytics'},
+}
+print('Student1 name:', student['p1']['name'])
+print('Student2 major:', student['p2']['major'])
+# Thêm, cập nhật & xóa phần tử (Nhấn mạnh thao tác)
+# Thêm hoặc cập nhật
+product = {
+    'id': 248,
+    'name': 'Mouse Logitech',
+    'price': '5000000 đ'
+}
+product['description'] = 'Chuột không dây cao cấp'
+print('After adding description:', product) # Thêm phần tử mới
+product['price'] = '4500000 đ'
+print('After updating price:', product) # Cập nhật phần tử
+# Xóa phần tử
+product1 = {
+    'id': 248,
+    'name': 'Keyboard Logitech',
+    'price': '5000000 đ',
+    'description': 'Bàn phím cơ cao cấp'
+}
+del product1['description']
+print('After deleting description:', product1) # Xóa phần tử bằng del
+product1.pop('price') # Xóa phần tử bằng pop()
+print('After popping price:', product1)
+product1.clear() # Xóa tất cả phần tử trong dictionary
+print('After clearing all items:', product1)
