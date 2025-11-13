@@ -1,0 +1,56 @@
+## SET 
+# 1.Tạo set 
+# + Tạo set trực tiếp
+my_set = {1, 2, 3, 4, 5}
+print(my_set)
+# + Tạo set từ một danh sách
+my_list = [1, 2, 2, 3, 4, 4, 5]
+my_set_from_list = set(my_list)
+print(my_set_from_list)
+# + Tạo set rỗng
+empty_set = set()
+print(empty_set)
+# 2. Thêm và xóa phần tử trong Set
+# + Thêm phần tử vào set
+my_set1 = {1, 2, 3}
+my_set1.add(4)
+print(my_set1)
+# ++ Thêm nhiều phần tử vào set
+myset = {1,2,4}
+myset.update([5,6,3])
+print(myset)
+# + Xóa phần tử khỏi set
+my_set2 = {1, 2, 3, 4, 5}
+my_set2.remove(3)  # Nếu phần tử không tồn tại sẽ gây lỗi
+print(my_set2)
+my_set2.discard(6) # Nếu phần tử không tồn tại sẽ không gây
+print(my_set2)
+my_set2.pop()    # Xóa và trả về một phần tử ngẫu nhiên
+print(my_set2)
+my_set2.clear() # Xóa tất cả phần tử trong set
+print(my_set2)
+# 3. Duyệt qua các phần tử trong Set
+my_set3 = {'apple', 'banana', 'cherry'}
+for i in my_set3:
+    print(i)
+## Duyệt set kết hợp với điều kiện
+my_set4 = {10, 15, 20, 25, 30, 35}
+for a in my_set4:
+    if a % 10 == 0:
+        print(f"{a} chia hết cho 10")
+## Duyệt và tạo set mới (set comprehension)
+original_set = {1, 2, 3, 4, 5}
+new_set = {x**3 for x in original_set}
+print(new_set)
+# 4. Một số hàm thông dụng với Set
+# + Hàm len()
+my_set5 = {1, 2, 3, 4, 5}
+print(len(my_set5))  # Trả về số lượng phần tử trong set
+# + Hàm copy()
+my_set6 = {10, 20, 30}
+copied_set = my_set6.copy()
+print(copied_set)  # Kết quả: {10, 20, 30}
+# + Hàm in or not in
+my_set7 = {'a', 'b', 'c'}
+print('b' in my_set7)    # Kết quả: True
+print('d' not in my_set7) # Kết quả: True

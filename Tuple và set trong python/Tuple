@@ -1,0 +1,45 @@
+## TUPPLE
+# 1. Truy cập phần tử bằng chỉ số
+my_tuple = ('Hoàng','Va','Python')
+print(my_tuple[0])  # Truy cập phần tử đầu tiên
+print(my_tuple[1])  # Truy cập phần tử thứ hai          
+print(my_tuple[-1]) # Truy cập phần tử cuối cùng
+# 2. Cắt lát (slicing)
+my_tuple1 = (10,20,30,40,50,60,70,80,90)
+print(my_tuple1[2:5])   # Lấy phần tử từ chỉ số 2 đến 4
+print(my_tuple1[:4])    # Lấy phần tử từ đầu đến chỉ số
+print(my_tuple1[5:])    # Lấy phần tử từ chỉ số 5 đến cuối
+print(my_tuple1[-5:-2]) # Lấy phần tử từ chỉ số -5
+print(my_tuple1 [1:8:2]) # Lấy phần tử từ chỉ số 1 đến 7 với bước nhảy 2
+# 3. Truy cập phần tử trong tupple lồng nhau
+nested_tuple = (1, 2, (3, 4, 5), (6, 7))
+print(nested_tuple[2])        # Truy cập tupple con (3, 4, 5)
+print(nested_tuple[2][1])     # Truy cập phần tử 4 trong tupple con (3, 4, 5)
+print(nested_tuple[3][1])     # Truy cập phần tử 7 trong tupple con (6, 7)
+# 4. Duyệt qua các phần tử trong tuple
+for i in my_tuple1:
+    print(i)
+# 6. Một số thao tác thường dùng với Tuple
+# + Hàm len()
+my_tuple2 = (5,10,15,20,25)
+print(len(my_tuple2))  # Trả về số lượng phần tử trong tuple()
+# + Hàm count()
+my_tuple3 = (1,2,3,2,4,2,5)
+print(my_tuple3.count(2))  # Đếm số lần xuất hiện của giá trị 2 trong tuple
+# + Hàm index()
+my_tuple4 = ('a','b','c','d','e')
+print(my_tuple4.index('c'))  # Trả về chỉ số của phần tử 'c' đầu tiên trong tuple
+# 6. Các phép toán với Tuple
+# + Phép cộng (+)
+tuple_a = (1,2,3)
+tuple_b = (4,5,6)
+tuple_c = tuple_a + tuple_b
+print(tuple_c)  # Kết quả: (1, 2, 3, 4, 5, 6)
+# + Phép nhân (*)
+tuple_d = (1,2,4)
+new_tuple = tuple_d * 3
+print(new_tuple)  # Kết quả: (1, 2, 4, 1, 2, 4, 1, 2, 4)
+# + Kiểm tra phần tử tồn tại
+tuple_e = ('x','y','z')
+print('y'in tuple_e)  # Kết quả: True
+print('a'in tuple_e)  # Kết quả: False
