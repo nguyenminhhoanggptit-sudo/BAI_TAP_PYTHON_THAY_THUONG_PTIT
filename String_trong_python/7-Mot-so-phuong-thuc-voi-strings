@@ -8,7 +8,7 @@ first_name = 'Nguyen'
 last_name = 'Minh Hoang'
 full_name = first_name + ' ' + last_name
 print(full_name)
-message = 'Xin Chào tôi là {full_name.upper()}'
+message = f'Xin Chào tôi là {full_name.upper()}'
 print(message)
 # Xóa khoảng trắng thừa
 text = '  Hello Python !  '
